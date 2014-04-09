@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:color="#ff1b1d26"
+    android:id="@+id/background"
+    >
+    <TextView
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:padding = "20dp"
+    android:textSize= "20dp"
+    android:text="Alerter v1.3"
+    android:textStyle="italic"
+    android:typeface="monospace"
+    android:gravity="center"
+    />
+
+    <TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text=""
+    android:gravity="center"
+    android:id="@+id/info"
+    android:textSize= "25dp"
+    android:typeface="monospace"
+    android:padding="10dp"
+    />
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:paddingTop="100dp"
+    >
+    <Button  
+    android:layout_width="fill_parent" 
+    android:layout_height="80dp" 
+    android:text="Okay"
+    android:textSize="20dp"
+    android:textStyle="bold"
+    android:textColor="#ffffffff"
+    android:id="@+id/start"
+    />
+
+    </LinearLayout>
+
+
+</LinearLayout>
