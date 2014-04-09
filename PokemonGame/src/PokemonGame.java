@@ -75,6 +75,10 @@ public class PokemonGame extends JFrame{
 		repaint();
 	}
 	
+	void revalidate(){
+		
+	}
+	
 	void player1StartTurn(){
 		JOptionPane.showMessageDialog(null, player1.name + " turn");
 		try{
