@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello" />
+   <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+    
+	    <Button
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Add Subscription"
+	        android:id="@+id/add_subscription"/>
+	    <EditText
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:hint="Subscription"
+	        android:id="@+id/subscription_name"/>
+    </LinearLayout>
+    
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Subscriptions"
+        android:id="@+id/subscribers"/>
+    
+    <EditText
+	        android:layout_width="fill_parent"
+	        android:layout_height="100dp"
+	        android:hint="Enter message"
+	        android:id="@+id/message"/>
+    
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Tags"
+        android:id="@+id/add_tags"/>
+    
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:id="@+id/send"/>
+
+</LinearLayout>
