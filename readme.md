@@ -3,21 +3,15 @@ This repository contains my resume, as well as some of my favorite / most signif
 <strong>RESUME</strong> :: dimuth_resume.pdf
 
 <strong>Harmonisation using Hidden Markov Models</strong>
-
-Time: Fall 2013
-
-Location: <code>HiddenMarkov</code>
-
-Languages: Python
-
-Concepts: HMM classification, markov decision processes
-
-Report: Yes
-
-Code: Yes
-
+<ul>
+<li>Time: Fall 2013</li>
+<li>Location: <code>HiddenMarkov</code></li>
+<li>Languages: Python</li>
+<li>Concepts: HMM classification, markov decision processes</li>
+<li>Report: Yes</li>
+<li>Code: Yes</li>
+</ul>
 Compares the effectiveness of the Hidden Markov Model in generating harmonisations for vocal and instrumental melodies. 
-
 <strong>Chord Prediction using Lyric Sentiments</strong>
 
 Time: Fall 2013
