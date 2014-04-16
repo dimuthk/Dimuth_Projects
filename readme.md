@@ -5,129 +5,94 @@ This repository contains my resume, as well as some of my favorite / most signif
 <strong>Harmonisation using Hidden Markov Models</strong>
 <ul>
 <li>Time: Fall 2013</li>
-<li>Location: <code>HiddenMarkov</code></li>
+<li>Directory: <code>HiddenMarkov</code></li>
 <li>Languages: Python</li>
 <li>Concepts: HMM classification, markov decision processes</li>
 <li>Report: Yes</li>
 <li>Code: Yes</li>
 </ul>
 Compares the effectiveness of the Hidden Markov Model in generating harmonisations for vocal and instrumental melodies. 
+
 <strong>Chord Prediction using Lyric Sentiments</strong>
-
-Time: Fall 2013
-
-Location: <code>ChordPrediction</code>
-
-Languages: Python
-
-Concepts: Naive bayes, SVM classification
-
-Report: Yes
-
-Code: Yes
-
+<ul>
+<li>Time: Fall 2013</li>
+<li>Location: <code>ChordPrediction</code></li>
+<li>Languages: Python</li>
+<li>Concepts: Naive bayes, SVM classification</li>
+<li>Report: Yes</li>
+<li>Code: Yes</li>
+</ul>
 Try to find a correlation between the sentiment of a given lyrical phrase, and its corresponding chord progression. 
 
 <strong>Document Wikifier</strong>
-
-Time: Spring 2013
-
-Location: <code>Wikifier</code>
-
-Languages: Python
-
-Concepts: Big data (~45 GB), linear regression, feature selection
-
-Report: Yes
-
-Code: Yes
-
+<ul>
+<li>Time: Spring 2013</li>
+<li>Location: <code>Wikifier</code></li>
+<li>Languages: Python</li>
+<li>Concepts: Big data (~45 GB), linear regression, feature selection</li>
+<li>Report: Yes</li>
+<li>Code: Yes</li>
+</ul>
 Entity tagger which identifies key phrases in a document, and hyperlinks these phrases to their associated Wikipedia articles.
 
 <strong>Twitter Information Catalysts</strong>
-
-Time: Fall 2012
-
-Location: <code>Twitter</code>
-
-Languages: Python, Java, C++
-
-Concepts: Big data (~100 GB), graph attributes (pagerank, betweenness centrality)
-
-Report: Yes
-
-Code: No
-
+<ul>
+<li>Time: Fall 2012</li>
+<li>Location: <code>Twitter</code></li>
+<li>Languages: Python, Java, C++</li>
+<li>Concepts: Big data (~100 GB), graph attributes (pagerank, betweenness centrality)</li>
+<li>Report: Yes</li>
+<li>Code: No</li>
+</ul>
 Identify information propagaters in a Twitter network.
 
 <strong>Quick Portable Survey Tool (QuiPST)</strong>
-
-Time: Spring 2012
-
-Location: <code>QuiPST</code>
-
-Languages: Java, Python, HTML/JS
-
-Concepts: Web development, android programming, client-server interaction
-
-Report: No
-
-Code: Yes
-
+<ul>
+<li>Time: Spring 2012</li>
+<li>Location: <code>QuiPST</code></li>
+<li>Languages: Java, Python, HTML/JS</li>
+<li>Concepts: Web development, android programming, client-server interaction</li>
+<li>Report: No</li>
+<li>Code: Yes</li>
+</ul>
 Surveying tool. Developed client-server model using Android libraries and Django web framework, respectively. The code for the client application is here. 
 
 <strong>SMS Messaging Standalone Application (FarmFox)</strong>
-
-Time: Spring 2012
-
-Location: <code>FarmFox</code>
-
-Concepts: Android programming, SMS utilities
-
-Report: No
-
-Code: Yes
-
+<ul>
+<li>Time: Spring 2012</li>
+<li>Location: <code>FarmFox</code></li>
+<li>Concepts: Android programming, SMS utilities</li>
+<li>Report: No</li>
+<li>Code: Yes</li>
+</ul>
 Android application allowing use of smartphone as a group SMS coordinator. 
 
 <strong>EKG Surveyor Application</strong>
-
-Time: Winter 2011
-
-Location: <code>Alerter</code>
-
-Concepts: Android programming
-
-Report: No
-
-Code: Yes
-
+<ul>
+<li>Time: Winter 2011</li>
+<li>Location: <code>Alerter</code></li>
+<li>Concepts: Android programming</li>
+<li>Report: No</li>
+<li>Code: Yes</li>
+</ul>
 Phone application allowing surveying of EKG patients on periodic intervals. 
 
 <strong>Pokemon Card Game Application</strong>
-
-Time: Winter 2011
-
-Location: <code>PokemonGame</code>
-
-Concepts: GUI, HCI elements (drag/drop/click, etc), heavy OOP design
-
-Report: No
-
-Code: Yes
-
+<ul>
+<li>Time: Winter 2011</li>
+<li>Location: <code>PokemonGame</code></li>
+<li>Concepts: GUI, HCI elements (drag/drop/click, etc), heavy OOP design</li>
+<li>Report: No</li>
+<li>Code: Yes</li>
+</ul>
 A software adaptation of the classical Pokemon trading card game. 
 
 <strong>SMS Messaging Gateway Application (Bluefox)</strong>
-
-Time: Spring 2011
-
-Location: <code>bluefox</code>
-
-Concepts: Android programming, server (drupal) interaction
-
-Report: No
-
-Code: Yes
-
+<ul>
+<li>Time: Spring 2011</li>
+<li>Location: <code>bluefox</code></li>
+<li>Concepts: Android programming, server (drupal) interaction</li>
+<li>Report: No</li>
+<li>Code: Yes</li>
+</ul>
 Phone application that allows smart phones to be used as gateways for SMS communication between server and clients. 
