@@ -1,6 +1,6 @@
 This repository contains my resume, as well as some of my favorite / most significant software projects. Some were for school, some for use in research, and some just for fun. 
 
-<strong>RESUME</strong> :: dimuth_resume.pdf
+<strong>RESUME</strong> :: resume.pdf
 
 <strong>Harmonisation using Hidden Markov Models</strong>
 <ul>
