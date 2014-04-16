@@ -61,6 +61,7 @@ Surveying tool. Developed client-server model using Android libraries and Django
 <ul>
 <li>Time: Spring 2012</li>
 <li>Directory: <code>FarmFox</code></li>
+<li>Languages: Java</li>
 <li>Concepts: Android programming, SMS utilities</li>
 <li>Report: No</li>
 <li>Code: Yes</li>
@@ -71,6 +72,7 @@ Android application allowing use of smartphone as a group SMS coordinator.
 <ul>
 <li>Time: Winter 2011</li>
 <li>Directory: <code>Alerter</code></li>
+<li>Languages: Java</li>
 <li>Concepts: Android programming</li>
 <li>Report: No</li>
 <li>Code: Yes</li>
@@ -81,6 +83,7 @@ Phone application allowing surveying of EKG patients on periodic intervals.
 <ul>
 <li>Time: Winter 2011</li>
 <li>Directory: <code>PokemonGame</code></li>
+<li>Languages: Java</li>
 <li>Concepts: GUI, HCI elements (drag/drop/click, etc), heavy OOP design</li>
 <li>Report: No</li>
 <li>Code: Yes</li>
@@ -91,6 +94,7 @@ A software adaptation of the classical Pokemon trading card game.
 <ul>
 <li>Time: Spring 2011</li>
 <li>Directory: <code>bluefox</code></li>
+<li>Languages: Java</li>
 <li>Concepts: Android programming, server (drupal) interaction</li>
 <li>Report: No</li>
 <li>Code: Yes</li>
