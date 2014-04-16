@@ -90,6 +90,17 @@ Phone application allowing surveying of EKG patients on periodic intervals.
 </ul>
 A software adaptation of the classical Pokemon trading card game. 
 
+<strong>Spades Application</strong>
+<ul>
+<li>Time: Fall 2011</li>
+<li>Directory: <code>Spades</code></li>
+<li>Languages: Java</li>
+<li>Concepts: GUI, HCI elements (drag/drop/click, etc)</li>
+<li>Report: No</li>
+<li>Code: Yes</li>
+</ul>
+Java adaptation of the Spades card game. 
+
 <strong>SMS Messaging Gateway Application (Bluefox)</strong>
 <ul>
 <li>Time: Spring 2011</li>
@@ -100,3 +111,4 @@ A software adaptation of the classical Pokemon trading card game.
 <li>Code: Yes</li>
 </ul>
 Phone application that allows smart phones to be used as gateways for SMS communication between server and clients. 
+

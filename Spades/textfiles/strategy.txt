@@ -1,0 +1,44 @@
+Strategies 
+
+1) Playing Strategy  
+
+The objective of the game is to complete the bid by winning the required number of tricks. 
+Thus, always take a good look at the hand before placing your bid. Make a high bid if you 
+have good amount Kings, Aces and other high cards and you are confident that they can get 
+you a lot of tricks. If you do not have that many high cards, the bid should always be low.  
+
+If the total number of bids placed by all the players is lower than 11 then it is evident 
+that you have to bag your opponents. This can be done by getting rid of all the cards that 
+you did not count as a bid. Try to win a trick ONLY with the card you counted while placing 
+the bid.  
+
+If the total number of bids placed is more than 12 then you should lead your short suits 
+first so you can start spading. Clearly there are not many bags in the game when a high 
+number of bid is made.  
+
+If the number of bids are between 11 and 12 it is wise to win your tricks early and be 
+in a safe zone.    
+
+2) Sandbagging  
+
+Avoid winning too many tricks above your bid. Every time a partnership wins 10 bags they 
+get a 100 point penalty.
+
+You can use this against your opponents by playing lower cards and making them win the trick 
+so they can get as many bags as possible.  
+
+3) Playing Nil  
+
+When you bid nil, try to get rid of all the higher cards without winning the trick. This 
+leaves you with lower cards towards the end of the game and you have a higher probability 
+of not winning any tricks with them   
+
+4) Playing tips  
+
+a) If you are trying to win a trick, never lead the King if the Ace of that suit has not 
+been played yet. 
+
+b) Lead your short suits first, this gives you a choice to win or lose a trick later 
+
+c) Try to get the middle cards like 8s and 9s out of your way so you are left with higher 
+cards by the end of the game 

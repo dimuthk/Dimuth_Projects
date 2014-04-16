@@ -1,0 +1,81 @@
+Rules 
+
+1) Introduction  
+
+Spades is a popular trick-taking game played by two partnerships 
+
+2) Players 
+
+The game is played by Four players out of which three are computer and 
+one is human. These four players form two partnerships 
+
+3) Goal 
+
+The objective of the game is to win at least the number of tricks that the 
+player bids on before starting the game. The player has to reach a preset number of 
+points to win the game. Normally the first pair to reach 500 points wins but in our 
+game the number of points is presettable.  
+
+4) Setup 
+
+Partners sit across from each other on the table. Each player gets 13 cards to 
+being with. They place the bid before starting the game. The bid ranges from nil to 10 
+
+5) Bidding 
+
+Players get to make a bid on the number of tricks they think they can win after 
+looking at their hand. The total number of bids for a partnership is equal to the 
+sum of the bid by individual players.  
+
+5.1) Nil Bidding  
+
+Nil bidding implies that the player won't win any trick. Both the partners are 
+allowed to bid nil 
+
+5.2) Double Bidding 
+
+Double bidding implies that the player bids nil without seeing the hand. After 
+the cards are dealt, the player gets to exchange three cards with his partner.
+
+Both the partners can bid double nil ,but in this case no exchange of cards takes place 
+ 
+
+6) Gameplay 
+
+The game is played clockwise. The player who starts the game throws a card of a particular 
+suite. To win the trick , other players have to throw a card of the same suite and the 
+player with the highest card wins. Spades suite acts as a trump card here. This means 
+that if you do not have a card of the suite that is being played and if you throw spades, 
+you win the hand. If there are spades on the table then the highest spades win. 
+
+7) Scoring 
+
+As mentioned before, the players can preset the amount of points needed to win. The default 
+number of points to win is 500.
+
+Each trick in bid gets you 10 points. Tricks that you win after reaching the bid fetch 
+you 1 point each.
+
+ 
+
+For example if you bid 3 tricks and win 5 tricks then your total score is 32 
+
+If you can't complete the bid then you lose 10 points for every trick you couldn't win.  
+
+7.1) Nil scoring 
+
+If the player bids nil and takes no trick, he/she earns a 100 point bonus. If the partnership 
+bids nil and succeeds in winning NO tricks then they get a 200 point bonus.
+
+If the player wins a trick he gets a 100 point penalty and if the partnership wins any 
+trick then they get a 200 point penalty.  
+ 
+
+7.2) Double Nil scoring 
+
+When the player bids double nil and wins no trick , he is entitled to a 200 point bonus. Similarly, 
+if the partnership bids double nil and has succeeds then they get a 400 point bonus.
+
+Like nil bidding, the player gets a 200 point penalty for winning a trick and the partnership gets 
+a 400 point penalty for winning any trick. If one of the player wins a trick and the other doesn't 
+then the penalty and the bonus cancel each other and the partnership gets 0 points
