@@ -16,7 +16,7 @@ Compares the effectiveness of the Hidden Markov Model in generating harmonisatio
 <strong>Chord Prediction using Lyric Sentiments</strong>
 <ul>
 <li>Time: Fall 2013</li>
-<li>Location: <code>ChordPrediction</code></li>
+<li>Directory: <code>ChordPrediction</code></li>
 <li>Languages: Python</li>
 <li>Concepts: Naive bayes, SVM classification</li>
 <li>Report: Yes</li>
@@ -27,7 +27,7 @@ Try to find a correlation between the sentiment of a given lyrical phrase, and i
 <strong>Document Wikifier</strong>
 <ul>
 <li>Time: Spring 2013</li>
-<li>Location: <code>Wikifier</code></li>
+<li>Directory: <code>Wikifier</code></li>
 <li>Languages: Python</li>
 <li>Concepts: Big data (~45 GB), linear regression, feature selection</li>
 <li>Report: Yes</li>
@@ -38,7 +38,7 @@ Entity tagger which identifies key phrases in a document, and hyperlinks these p
 <strong>Twitter Information Catalysts</strong>
 <ul>
 <li>Time: Fall 2012</li>
-<li>Location: <code>Twitter</code></li>
+<li>Directory: <code>Twitter</code></li>
 <li>Languages: Python, Java, C++</li>
 <li>Concepts: Big data (~100 GB), graph attributes (pagerank, betweenness centrality)</li>
 <li>Report: Yes</li>
@@ -49,7 +49,7 @@ Identify information propagaters in a Twitter network.
 <strong>Quick Portable Survey Tool (QuiPST)</strong>
 <ul>
 <li>Time: Spring 2012</li>
-<li>Location: <code>QuiPST</code></li>
+<li>Directory: <code>QuiPST</code></li>
 <li>Languages: Java, Python, HTML/JS</li>
 <li>Concepts: Web development, android programming, client-server interaction</li>
 <li>Report: No</li>
@@ -60,7 +60,7 @@ Surveying tool. Developed client-server model using Android libraries and Django
 <strong>SMS Messaging Standalone Application (FarmFox)</strong>
 <ul>
 <li>Time: Spring 2012</li>
-<li>Location: <code>FarmFox</code></li>
+<li>Directory: <code>FarmFox</code></li>
 <li>Concepts: Android programming, SMS utilities</li>
 <li>Report: No</li>
 <li>Code: Yes</li>
@@ -70,7 +70,7 @@ Android application allowing use of smartphone as a group SMS coordinator.
 <strong>EKG Surveyor Application</strong>
 <ul>
 <li>Time: Winter 2011</li>
-<li>Location: <code>Alerter</code></li>
+<li>Directory: <code>Alerter</code></li>
 <li>Concepts: Android programming</li>
 <li>Report: No</li>
 <li>Code: Yes</li>
@@ -80,7 +80,7 @@ Phone application allowing surveying of EKG patients on periodic intervals.
 <strong>Pokemon Card Game Application</strong>
 <ul>
 <li>Time: Winter 2011</li>
-<li>Location: <code>PokemonGame</code></li>
+<li>Directory: <code>PokemonGame</code></li>
 <li>Concepts: GUI, HCI elements (drag/drop/click, etc), heavy OOP design</li>
 <li>Report: No</li>
 <li>Code: Yes</li>
@@ -90,7 +90,7 @@ A software adaptation of the classical Pokemon trading card game.
 <strong>SMS Messaging Gateway Application (Bluefox)</strong>
 <ul>
 <li>Time: Spring 2011</li>
-<li>Location: <code>bluefox</code></li>
+<li>Directory: <code>bluefox</code></li>
 <li>Concepts: Android programming, server (drupal) interaction</li>
 <li>Report: No</li>
 <li>Code: Yes</li>
