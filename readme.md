@@ -2,6 +2,17 @@ This repository contains my resume, as well as some of my favorite / most signif
 
 <strong>RESUME</strong> :: resume.pdf
 
+<strong>Chord Prediction</strong>
+<ul>
+<li>Time: Spring 2014</li>
+<li>Directory: <code>ChordPrediction</code></li>
+<li>Languages: Python</li>
+<li>Concepts: Graph theory</li>
+<li>Report: No</li>
+<li>Code: No</li>
+</ul>
+Uses music notes and non-deterministic graph structures to predict chord progressions
+
 <strong>Harmonisation using Hidden Markov Models</strong>
 <ul>
 <li>Time: Fall 2013</li>
@@ -16,7 +27,7 @@ Compares the effectiveness of the Hidden Markov Model in generating harmonisatio
 <strong>Chord Prediction using Lyric Sentiments</strong>
 <ul>
 <li>Time: Fall 2013</li>
-<li>Directory: <code>ChordLyric</code></li>
+<li>Directory: <code>ChordLyr</code></li>
 <li>Languages: Python</li>
 <li>Concepts: Naive bayes, SVM classification</li>
 <li>Report: Yes</li>
