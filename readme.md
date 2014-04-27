@@ -16,7 +16,7 @@ Compares the effectiveness of the Hidden Markov Model in generating harmonisatio
 <strong>Chord Prediction using Lyric Sentiments</strong>
 <ul>
 <li>Time: Fall 2013</li>
-<li>Directory: <code>ChordPrediction</code></li>
+<li>Directory: <code>ChordLyric</code></li>
 <li>Languages: Python</li>
 <li>Concepts: Naive bayes, SVM classification</li>
 <li>Report: Yes</li>
