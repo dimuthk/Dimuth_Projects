@@ -1,7 +1,7 @@
 # this is the framework. take a single chord file and process it. 
+import pdb
 
-
-def run(file_name, merge, progs_dict):
+def run(file_name, merge, progs_dict, fout):
     fname = "chord_data/" + file_name
 
     chord_dat = {}
@@ -22,7 +22,7 @@ def run(file_name, merge, progs_dict):
     prediction = {}
 
     #perform all merges
-    merge(chord_dat, progs_dict)
+    merge(chord_dat, progs_dict, answers)
 
     #make root predictions based on minimum counts
     for bar in chord_dat:
@@ -32,12 +32,27 @@ def run(file_name, merge, progs_dict):
     matches = 0
     total = 0
 
+
     #measure accuracy
     for bar in prediction:
+      matches_in = 0
+      total_in = 0
       for i in range(len(prediction[bar])):
         if prediction[bar][i] == answers[bar][i][0]:
           matches += 1
+          matches_in += 1
+
         total += 1
-    
-    print prediction
+        total_in += 1
+
+      ans = [v[0] for v in answers[bar]]
+      #isCorrect = reduce(lambda x,y: x and y, [ans[j] == prediction[bar][j] for j in range(len(ans))])
+      minArr = [min(chord_dat[bar][j]['roots']) for j in range(len(chord_dat[bar]))]
+      fout.write(str(ans) + ":" + str(prediction[bar]) + ":" + str(float(matches_in)/total_in) + ":" + str(minArr) + "\n")
+      
+    ftemp = open("TEST.csv", "w")
+    for bar in chord_dat:
+      for j in range(len(chord_dat[bar])):
+        ftemp.write(str(min(chord_dat[bar][j]["roots"])) + ":" + str(1 if prediction[bar][j] == answers[bar][j][0] else 0)  + ":" + prediction[bar][j] + ":" + answers[bar][j][0] + "\n")
+
     return float(matches)/total

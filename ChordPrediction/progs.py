@@ -4,15 +4,24 @@ def transpose(chords,key):
   chord_ref = ("A","B","C","D","E","F","G")
   numerals = ("I","II","III","IV","V","VI","VII")
 
-  offset = chord_ref.index(key)
+  try:
+    offset = chord_ref.index(key.upper()[0])
+  except:
+    pdb.set_trace()
   chords_trans = {}
 
-  for prog in chords:
-    try:
-      new_prog = tuple([chord_ref[(numerals.index(chord) + offset) % len(numerals)] for chord in prog])
-      chords_trans[new_prog] = chords[prog]
-    except:
-      a = 2
+  for chord_len in chords.keys():
+    chords_trans[chord_len] = {}
+    for prog in chords[chord_len]:
+      try:
+        new_prog = tuple()
+        for chord in prog:
+          chord = chord.split('[')[0]
+          new_prog += (chord_ref[(numerals.index(chord) + offset) % len(numerals)],)
+        #new_prog = tuple([chord_ref[(numerals.index(chord) + offset) % len(numerals)] for chord in prog])
+        chords_trans[chord_len][new_prog] = chords[chord_len][prog]
+      except:
+        pdb.set_trace()
 
   return chords_trans
 
