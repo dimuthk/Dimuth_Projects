@@ -18,7 +18,6 @@ def getPairs(file_name):
 
   # the label including #/b. used later
   mainLabel = {}
-  markov = Markov()
 
   for line in open(fname,"r").readlines()[1:]:
     contents = line.split()
@@ -82,8 +81,19 @@ def featureList(pairs):
       prevBar = bar.split('_')[0] + str(int(bar.split('_')[1])-1)
       if i > 0:
         prevFeats = dict([('P_' + key, val) for (key,val) in isoFeaturesOrig[i-1][0].items()])
-        isoFeatures[i] = (dict(isoFeatures[i][0].items() + prevFeats.items() + [('markov2', markov.predict2(chordKey, rootScores[i-1]))] ) , isoFeatures[i][1])
-        #isoFeatures[i] = (dict(isoFeatures[i][0].items() + prevFeats.items() ) , isoFeatures[i][1])
+        
+        '''
+        markovFeats = [('markov2', markov.predict(chordKey, tuple([rootScores[i-1]]), markov.markov2))]
+
+        if i > 1:
+          markovFeats += [('markov3', markov.predict(chordKey, tuple([rootScores[i-2], rootScores[i-1]]), markov.markov3))]
+
+        if i > 2:
+          markovFeats += [('markov4', markov.predict(chordKey, tuple([rootScores[i-3], rootScores[i-2], rootScores[i-1]]), markov.markov4))]
+        '''
+
+        #isoFeatures[i] = (dict(isoFeatures[i][0].items() + prevFeats.items() + markovFeats) , isoFeatures[i][1])
+        isoFeatures[i] = (dict(isoFeatures[i][0].items() + prevFeats.items()) , isoFeatures[i][1])
 
       elif prevBar in pairs:
         prevFeats = dict([('P_' + key, val) for (kev,val) in getIsoFeatures(pairs[prevBar][-1][0]).items()])
@@ -180,9 +190,9 @@ for point in test:
   
   if predict == label:
     cnt += 1
-    fC.write(predict + "," + label + "," + data[0][8] + "," + point[0]['COF']  + "," + str(data[0][9]) + "\n")
+    fC.write(predict + "," + label + "," + data[0][8] + "," + str(data[0][9]) + "\n")
   else:
-    fW.write(predict + "," + label + "," + data[0][8] + "," + point[0]['COF'] + "," + str(data[0][9]) + "\n")
+    fW.write(predict + "," + label + "," + data[0][8] + "," + str(data[0][9]) + "\n")
 
 print "FINAL ACCURACY:", float(cnt) / tot
 
@@ -198,4 +208,4 @@ for line in open("wrong.csv","r").readlines()[1:]:
   tot += 1
 
 print "SHARP/FLAT ERRORS:", float(cnt)/tot
-classifier.show_most_informative_features()
+classifier.show_most_informative_features(20)

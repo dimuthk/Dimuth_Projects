@@ -22,6 +22,9 @@ class Markov():
     self.progRef['D'] = {'D':'I', 'E':'ii', 'F#':'iii', 'G':'IV', 'A':'V', 'B':'vi', 'C#':'VII'}
 
     self.progRefRev = {}
+    self.hit = 0
+    self.miss = 0
+
     for key in self.progRef:
       self.progRefRev[key] = dict([(item[1],item[0]) for item in self.progRef[key].items()])
 
@@ -39,92 +42,56 @@ class Markov():
         chord = contents[12]
 
         if len(prev) > 0:
-          self.train(key, chord, prev[-1])
+          self.train(key, chord, prev[:1], self.markov2)
 
+        if len(prev) > 1:
+          self.train(key, chord, prev[:2], self.markov3)
+
+        if len(prev) > 2:
+          self.train(key, chord, prev[:3], self.markov4)
+          prev = prev[1:]
+          
         prev += [chord]
 
-
-  def train(self, key, curr, prev):
+  
+  def train(self, key, curr, prevs, markovDict):
     try:
-      prevNote = self.progRef[key][prev]
+      prevNotes = [self.progRef[key][prev] for prev in prevs]
       currNote = self.progRef[key][curr]
     except:
-      return 
+      return
 
-    self.markov2[prevNote] = self.markov2.get(prevNote, {})
-    self.markov2[prevNote][currNote] = self.markov2[prevNote].get(currNote, 0) + 1
+    markovDict[tuple(prevNotes)] = markovDict.get(tuple(prevNotes), {})
+    markovDict[tuple(prevNotes)][currNote] = markovDict[tuple(prevNotes)].get(currNote, 0) + 1
 
-  # given root scores of previous line, predict current line
-  def predict2(self, key, rootScores):
-    labels = self.progRef[key].keys()
-    labels = sorted(labels)
-    labels = labels[2:] + labels[:2]
-    scores = dict(zip(labels, rootScores))
+
+  def predict(self, key, rootScores, markovDict):
+    labels = sorted(self.progRef[key].keys())
+    labels = labels[2:] + labels [:2]
+    scores = [dict(zip(labels, rootScore)) for rootScore in rootScores]
 
     progScores = {}
-    for label in labels:
-      note = self.progRef[key][label]
+    # possible progressions
+    for prog in markovDict:
+      # get the score for this progression
+      try:
+        notes = [self.progRefRev[key][note] for note in prog]
+      except:
+        continue
+      noteScores = [scores[i][notes[i]] for i in range(len(notes))]
 
-      for dest in self.markov2[note]:
-        progScores[dest] = float(self.markov2[note][dest]) / scores[label]
-    
-    bestNote =  max(progScores.keys(), key = lambda k: progScores[k])
-    if bestNote in self.progRefRev[key]:
-      return self.progRefRev[key][bestNote]
-    else:
-      return "N/A"
+      for dest in markovDict[prog]:
+        progScores[dest] = max(progScores.get(dest,0), float(markovDict[prog][dest])) / sum(noteScores)
+        #progScores[dest] = max(progScores.get(dest,0), float(1)) / sum(noteScores)
+
+    bestNotes = sorted(progScores.keys(), key = lambda k: progScores[k], reverse=True)
+
+    for bestNote in bestNotes:
+      if bestNote in self.progRefRev[key]:
+        return self.progRefRev[key][bestNote]
+
+    self.miss += 1
+    print "MISS", self.miss
+    return "N/A"
 
 
-'''
-for fname in os.listdir("chord_data/"):
-  prev = list()
-  for line in open("chord_data/" + fname).readlines()[1:]:
-    chord = line.split()[14]
-  
-    if len(prev) > 0:
-      markov2[prev[0]] = markov2.get(prev[0], {})
-      markov2[prev[0]][chord] = markov2[prev[0]].get(chord, 0) + 1
-
-    if len(prev) > 1:
-      markov3[tuple(prev[:2])] = markov3.get(prev[0], {})
-      markov3[tuple(prev[:2])][chord] = markov3[tuple(prev[:2])].get(chord, 0) + 1
-
-    if len(prev) > 2:
-      markov4[tuple(prev[:3])] = markov4.get(prev[0], {})
-      markov4[tuple(prev[:3])][chord] = markov4[tuple(prev[:3])].get(chord, 0) + 1
-    
-    if len(prev) == 4:
-      prev = prev[1:]
-
-    prev += [chord]
-
-pdb.set_trace()
-'''
-
-'''
-progs = list()
-for fname in os.listdir("chord_data/"):
-  prog = list()
-  for line in open("chord_data/" + fname).readlines()[1:]:
-    contents = line.split()
-
-    key = contents[13]
-
-    if len(prog) > 0:
-      if prog[-1] != contents[12]:
-        prog += [contents[12]]
-    else:
-      prog += [contents[12]]
-  
-  progs.append([progRef[key].get(p,'-') for p in prog])
-
-markov = Markov()
-for prog in progs:
-  prev = list()
-
-  for chord in prog:
-    pdb.set_trace()
-  
-
-pdb.set_trace()
-'''

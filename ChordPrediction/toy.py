@@ -1,3 +1,3 @@
-from cof import COF
+from sklearn import svm
 
 a = COF()
