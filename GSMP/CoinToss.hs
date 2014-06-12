@@ -1,4 +1,6 @@
--- Coin Toss example.
+-- Coin Toss simulation. 
+-- Consider a gambling game in which a fair coin is repeatedly flipped until |#heads - #tails| = 3. The player receives $8.99 at the end of the game but must pay $1 for each coin flip. No quitting in the middle of the game. Is this game a good bet over the long run? That is, what is the expected reward? This is a simple example of decision-making under uncertainty (to play or not to play).
+
 
 {-# LANGUAGE BangPatterns #-}
 module CoinToss (simCoinToss) where
