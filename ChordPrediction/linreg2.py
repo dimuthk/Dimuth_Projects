@@ -10,6 +10,8 @@ from cof import COF
 
 from nltk.classify.scikitlearn import SklearnClassifier
 
+classA = ['C','E','G']
+classB = ['D','A','F','B']
 
 # fname -> List of labelled pairs
 def getPairs(file_name):
@@ -31,7 +33,8 @@ def getPairs(file_name):
       data = contents[4:12] + [contents[13]] + [pitches] + [float(contents[3])/cnt]
       
       # ignore #/b
-      label = contents[12][0]
+      #label = contents[12][0]
+      label = 'classA' if contents[12] in classA else 'classB'
 
       mainLabel[str((data,label))] = contents[12]
 
@@ -81,7 +84,7 @@ def featureList(pairs):
       prevBar = bar.split('_')[0] + str(int(bar.split('_')[1])-1)
       if i > 0:
         prevFeats = dict([('P_' + key, val) for (key,val) in isoFeaturesOrig[i-1][0].items()])
-        #markovPred = markov.predict(chordKey, tuple([rootScores[i-1]]), markov.markov2)
+        '''        
         markovFeats = [('markov2', markov.predict(chordKey, tuple([rootScores[i-1]]), markov.markov2))]
 
         if i > 1:
@@ -89,9 +92,9 @@ def featureList(pairs):
 
         if i > 2:
           markovFeats += [('markov4', markov.predict(chordKey, tuple([rootScores[i-3], rootScores[i-2], rootScores[i-1]]), markov.markov4))]
-
-        isoFeatures[i] = (dict(isoFeatures[i][0].items() + prevFeats.items() + markovFeats) , isoFeatures[i][1])
-        #isoFeatures[i] = (dict(isoFeatures[i][0].items() + prevFeats.items()) , isoFeatures[i][1])
+        '''
+        #isoFeatures[i] = (dict(isoFeatures[i][0].items() + prevFeats.items() + markovFeats) , isoFeatures[i][1])
+        isoFeatures[i] = (dict(isoFeatures[i][0].items() + prevFeats.items()) , isoFeatures[i][1])
 
       elif prevBar in pairs:
         prevFeats = dict([('P_' + key, val) for (kev,val) in getIsoFeatures(pairs[prevBar][-1][0]).items()])
@@ -163,7 +166,6 @@ split = 9*len(pairs)/10
 
 classifier = nltk.NaiveBayesClassifier.train(train)
 
-
 print "REGRESSION ACCURACY:", nltk.classify.accuracy(classifier, test)
 
 cnt, tot = 0,0
@@ -191,7 +193,7 @@ for point in test:
     cnt += 1
     fC.write(predict + "," + label + "," + data[0][8] + "," + str(data[0][9]) + "\n")
   else:
-    fW.write(predict + ":" + label + ":" + data[0][8] + ":" + str(data[0][9]) + "\n")
+    fW.write(predict + "," + label + "," + data[0][8] + "," + str(data[0][9]) + "\n")
 
 print "FINAL ACCURACY:", float(cnt) / tot
 

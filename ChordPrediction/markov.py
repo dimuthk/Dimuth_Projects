@@ -29,6 +29,7 @@ class Markov():
       self.progRefRev[key] = dict([(item[1],item[0]) for item in self.progRef[key].items()])
 
     self.markov2 = {}
+    self.markov2Acc = {}
     self.markov3 = {}
     self.markov4 = {}
 
@@ -37,7 +38,7 @@ class Markov():
 
       for line in open("chord_data/" + fname).readlines()[1:]:
         contents = line.split()
-        
+           
         key = contents[13]
         chord = contents[12]
 
@@ -52,8 +53,15 @@ class Markov():
           prev = prev[1:]
           
         prev += [chord]
-
-  
+    
+    fout = open("markov2.dot","w")
+    fout.write("digraph sample{\n")
+    for chord in self.markov2:
+      for dest in self.markov2[chord]:
+        fout.write(chord[0] + "->" + dest + "[weight=" + str(self.markov2[chord][dest]) + "];\n")
+    fout.write("}")
+    fout.close()
+    
   def train(self, key, curr, prevs, markovDict):
     try:
       prevNotes = [self.progRef[key][prev] for prev in prevs]
@@ -88,10 +96,10 @@ class Markov():
 
     for bestNote in bestNotes:
       if bestNote in self.progRefRev[key]:
-        return self.progRefRev[key][bestNote]
+        return self.progRefRev[key][bestNote][0]
 
     self.miss += 1
     print "MISS", self.miss
     return "N/A"
 
-
+markov = Markov()
