@@ -1,5 +1,38 @@
 <HTML>
 	<HEAD><TITLE>Pokemon Battleground</TITLE></HEAD>
 	<BODY>
+
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.4.4.js"></script>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.js"></script>
+       
+    <div id="pageContent">
+      <h1>Pokemon data should display here</h1>
+      <div id="activeContainer"></div>
+    </div>
+
+    <script id="activeTemplate" type="text/x-jQuery-tmpl">
+      <div>
+        <h2>${title}</h2>
+      </div>
+    </script>
+
+    <script> 
+      $.getJSON("http://localhost:8080/PokeServlet/simpleJson", function(data) {
+    	//  $("#activeTemplate").tmpl(data).appendTo("#activeContainer")
+    	alert(data)
+      });
+      
+      /*$.ajax({
+          url : "http://localhost:8080/PokeServlet/simpleJson",
+          dataType : 'json',
+          error : function(_,_,err) {
+            alert(err)
+          },
+          success : function(data) {
+            alert(data)
+          }
+        });*/
+    </script>
+
 	</BODY>
 </HTML>

@@ -8,9 +8,9 @@ import json.JSONSchema
 abstract class PokemonCard(
     displayName : String,
     imgName : String,
-    val maxHp : Integer) extends Card(displayName, imgName) {
+    val maxHp : Int) extends Card(displayName, imgName) {
 
-  var currHp : Integer = maxHp
+  var currHp : Int = maxHp
   
   override def setJsonValues(json : JSONObject) {
     currHp = json.get(JSONSchema.CURR_HP.toString()) match {
@@ -23,5 +23,7 @@ abstract class PokemonCard(
       .put(JSONSchema.DISPLAY_NAME.toString(), displayName)
       .put(JSONSchema.MAX_HP.toString(), maxHp)
       .put(JSONSchema.CURR_HP.toString(), currHp)
+      
+  def testX() : String = new JSONObject().toString()
 
 }

@@ -6,9 +6,17 @@
     <servlet-name>helloWorld</servlet-name>
     <servlet-class>servlets.Battleground</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>simpleJson</servlet-name>
+  	<servlet-class>servlets.SimpleJson</servlet-class>
+  </servlet>
   <servlet-mapping>
     <servlet-name>helloWorld</servlet-name>
     <url-pattern>/sayHello</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>simpleJson</servlet-name>
+  	<url-pattern>/simpleJson</url-pattern>
   </servlet-mapping>
 </web-app>
 
