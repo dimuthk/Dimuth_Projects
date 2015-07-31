@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/akshens/!svn/ver/260/trunk/Android%20Applications/Akshen/src/drupalservices/apis
+END
+NodeGetApi.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/akshens/!svn/ver/171/trunk/Android%20Applications/Akshen/src/drupalservices/apis/NodeGetApi.java
+END
+ServicesApis.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/akshens/!svn/ver/171/trunk/Android%20Applications/Akshen/src/drupalservices/apis/ServicesApis.java
+END
+ImageNodeSaveApi.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/akshens/!svn/ver/260/trunk/Android%20Applications/Akshen/src/drupalservices/apis/ImageNodeSaveApi.java
+END
+UserLoginApi.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/akshens/!svn/ver/171/trunk/Android%20Applications/Akshen/src/drupalservices/apis/UserLoginApi.java
+END
+BlogNodeSaveApi.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/akshens/!svn/ver/260/trunk/Android%20Applications/Akshen/src/drupalservices/apis/BlogNodeSaveApi.java
+END
+UserLogoutApi.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/akshens/!svn/ver/171/trunk/Android%20Applications/Akshen/src/drupalservices/apis/UserLogoutApi.java
+END
+ViewGetApi.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/akshens/!svn/ver/209/trunk/Android%20Applications/Akshen/src/drupalservices/apis/ViewGetApi.java
+END
+FoodNodeSaveApi.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/akshens/!svn/ver/171/trunk/Android%20Applications/Akshen/src/drupalservices/apis/FoodNodeSaveApi.java
+END
+FileSaveApi.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/akshens/!svn/ver/260/trunk/Android%20Applications/Akshen/src/drupalservices/apis/FileSaveApi.java
+END
+SystemConnectApi.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/akshens/!svn/ver/171/trunk/Android%20Applications/Akshen/src/drupalservices/apis/SystemConnectApi.java
+END
+FileGetApi.java
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/akshens/!svn/ver/173/trunk/Android%20Applications/Akshen/src/drupalservices/apis/FileGetApi.java
+END
+NodeLocation.java
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/akshens/!svn/ver/171/trunk/Android%20Applications/Akshen/src/drupalservices/apis/NodeLocation.java
+END
+NodeSaveApi.java
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/akshens/!svn/ver/171/trunk/Android%20Applications/Akshen/src/drupalservices/apis/NodeSaveApi.java
+END

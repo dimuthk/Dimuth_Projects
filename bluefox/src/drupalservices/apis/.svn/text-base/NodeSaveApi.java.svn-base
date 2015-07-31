@@ -1,0 +1,13 @@
+package drupalservices.apis;
+
+public class NodeSaveApi extends ServicesApis{
+
+	public NodeSaveApi()
+	{
+		
+		apiName = "node.save";
+		
+	}
+	
+	
+}

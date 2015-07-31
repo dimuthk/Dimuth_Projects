@@ -1,0 +1,9 @@
+About 
+
+Spades v1.0
+
+Developed as a final project for ECE373 at the University of Arizona 
+
+Spades v1.0 is a popular trick -taking card game played between two partnerships.  
+
+Developers -: Dimuth Kulasinghe, Eli Benjamin, Roxan Cruz and Amit Juneja

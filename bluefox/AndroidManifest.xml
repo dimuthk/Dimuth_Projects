@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.example.bluefox"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:icon="@drawable/bluefox" android:label="@string/app_name">
+        <activity android:name=".bluefox"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+  		<activity android:name=".ShowMessages" /> 
+  		<activity android:name=".Blog" /> 
+  		<activity android:name=".ShowUpdates" /> 
+  		<activity android:name=".Settings" /> 
+  		<service android:name=".DistributeMessages" /> 
+  		<service android:name=".UpdateMessages" />
+    </application>
+  <uses-permission android:name="android.permission.SEND_SMS" /> 
+  <uses-permission android:name="android.permission.RECEIVE_SMS" /> 
+  <uses-permission android:name="android.permission.INTERNET" /> 
+       <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+	 <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+	 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+</manifest> 

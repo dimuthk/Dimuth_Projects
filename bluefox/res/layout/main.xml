@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >    
+<CheckBox
+	android:layout_width="fill_parent" 
+    android:layout_height="40dp" 
+    android:text="Toggle Message Updates"
+    android:id="@+id/search_akshen"
+    />
+<LinearLayout
+	android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+    <Button
+	android:layout_width="160dp" 
+    android:layout_height="wrap_content" 
+    android:text="Show Messages"
+    android:id="@+id/show_messages"/>
+<Button
+	android:layout_width="160dp" 
+    android:layout_height="wrap_content" 
+    android:text="View Update Log"
+    android:id="@+id/view_update_log"/>
+    
+    </LinearLayout>
+    <LinearLayout
+	android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+<Button
+	android:layout_width="160dp" 
+    android:layout_height="wrap_content" 
+    android:text="Settings"
+    android:id="@+id/settings"/>
+     </LinearLayout>
+     <LinearLayout
+	android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+     </LinearLayout>
+<TextView
+	android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text=""
+    android:id="@+id/output2"/>
+    <Button
+	android:layout_width="160dp" 
+    android:layout_height="wrap_content" 
+    android:text="Refresh"
+    android:id="@+id/refresh"/>
+</LinearLayout>

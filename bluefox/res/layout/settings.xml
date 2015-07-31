@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:orientation="vertical">
+    <LinearLayout
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:orientation="horizontal">
+    <Button
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="Back"
+  android:id="@+id/back"/>
+    <Button
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="Clear Update Log"
+  android:id="@+id/clear_update_log"/>
+  </LinearLayout>
+
+  <TextView
+  android:layout_width = "fill_parent"
+  android:layout_height= "wrap_content"
+  android:text=""
+  android:id="@+id/drupalURL_info"/>
+  <LinearLayout
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:orientation="horizontal">
+  <Button
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="Change URL"
+  android:textSize="12dp"
+  android:id="@+id/change_drupal_url"/>
+  <Button
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="Reset URL"
+  android:textSize="12dp"
+  android:id="@+id/reset_drupal_url"/>
+  </LinearLayout>
+  
+    <TextView
+  android:layout_width = "fill_parent"
+  android:layout_height= "wrap_content"
+  android:text=""
+  android:id="@+id/messageURL_info"/>
+  <LinearLayout
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:orientation="horizontal">
+  <Button
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="Change URL"
+  android:textSize="12dp"
+  android:id="@+id/change_message_url"/>
+  <Button
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="Reset URL"
+  android:textSize="12dp"
+  android:id="@+id/reset_message_url"/>
+  </LinearLayout>
+  
+  
+  
+  <LinearLayout
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:orientation="vertical">
+  <TextView
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text=""
+  android:textSize="12dp"
+  android:id="@+id/message_distr_rate"/>
+  <LinearLayout
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:orientation="horizontal">
+  <Button
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="Change Distribution Rate"
+  android:textSize="12dp"
+  android:id="@+id/change_distr_rate"/>
+  <Button
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="Stop distributing"
+  android:textSize="12dp"
+  android:id="@+id/stop_distr"/>
+   </LinearLayout>
+    <TextView
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text=""
+  android:textSize="12dp"
+  android:id="@+id/message_update_rate"/>
+  <Button
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="Change Update Rate"
+  android:textSize="12dp"
+  android:id="@+id/change_update_rate"/>
+  </LinearLayout>
+  <TextView
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text=""
+  android:id="@+id/output3"/>
+  <LinearLayout
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:orientation="horizontal">
+  <Button
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="Set Days to Send"
+  android:textSize="12dp"
+  android:id="@+id/days_to_send"/>
+  <Button
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="Configure Update Log Settings"
+  android:textSize="12dp"
+  android:id="@+id/configureLog"/>
+  </LinearLayout>
+   <ListView android:id="@+id/ListView" 
+   android:layout_width="wrap_content" 
+   android:layout_height="wrap_content" /> 
+  
+  
+</LinearLayout>
