@@ -2,28 +2,30 @@ package card.pokemon
 
 import org.json.JSONObject
 import card.Card
-import json.JSONIdentifier
-import json.JSONSchema
+import json.Identifier
 
 abstract class PokemonCard(
     displayName : String,
-    imgName : String,
-    val maxHp : Int) extends Card(displayName, imgName) {
+    val maxHp : Int) extends Card(displayName) {
 
   var currHp : Int = maxHp
   
   override def setJsonValues(json : JSONObject) {
-    currHp = json.get(JSONSchema.CURR_HP.toString()) match {
+    currHp = json.get(Identifier.CURR_HP.toString()) match {
       case hp : Integer => hp
       case _ => throw new ClassCastException()
     }
   }
 
   override def toJsonImpl() = new JSONObject()
-      .put(JSONSchema.DISPLAY_NAME.toString(), displayName)
-      .put(JSONSchema.MAX_HP.toString(), maxHp)
-      .put(JSONSchema.CURR_HP.toString(), currHp)
-      
-  def testX() : String = new JSONObject().toString()
+      .put(Identifier.DISPLAY_NAME, displayName)
+      .put(Identifier.MAX_HP, maxHp)
+      .put(Identifier.CURR_HP, currHp)
 
+  
+  override def equals(o : Any) = o match {
+    case other : PokemonCard => currHp == other.currHp
+    case _ => false
+  }
+  
 }

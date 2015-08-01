@@ -18,11 +18,13 @@ trait Jsonable {
   def setJsonValues(json : JSONObject) : Unit
   
   
-  def getIdentifier() : JSONIdentifier.Value
+  def getIdentifier() : Identifier.Value
   
   /**
    * Converts the jsonable object into a json parcel.
    */
-  final def toJson() : JSONObject = toJsonImpl().put(JSONSchema.IDENTIFIER.toString(), getIdentifier())
+  final def toJson() : JSONObject = toJsonImpl().put(Identifier.IDENTIFIER, getIdentifier().id)
 
 }
+
+class JsonException(reason : String) extends Exception(reason)

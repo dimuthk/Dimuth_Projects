@@ -2,13 +2,12 @@ package card.pokemon
 
 import org.json.JSONObject
 
-import json.JSONIdentifier
+import json.Identifier
 
 class Machop extends PokemonCard(
     "Machop",
-    "IMG",
     50){
   
-  override def getIdentifier() = JSONIdentifier.MACHOP
+  override def getIdentifier() = Identifier.MACHOP
   
 }
