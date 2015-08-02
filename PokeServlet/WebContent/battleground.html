@@ -1,38 +1,159 @@
-<HTML>
-	<HEAD><TITLE>Pokemon Battleground</TITLE></HEAD>
-	<BODY>
+<html>
+<head>
+	<title>Battleground</title>
+	<link rel="stylesheet" type="text/css" href="battleground_style.css">
+</head>
+<body>
+<div id="content">
+    <div class="playerPanel">
+        <div class="prizePanel"  id="p2Prize">
+             <div class="row-9-100"></div>
+             <div class="row-40-100">
+                <div class="col-1-3">
+                    <div class="cardDisplay"></div>
+                </div>
+                <div class="col-1-3">
+                    <div class="cardDisplay"></div>
+                </div>
+                <div class="col-1-3">
+                    <div class="cardDisplay"></div>
+                </div>
+            </div>
+            <div class="row-9-100"></div>
+            <div class="row-40-100">
+                <div class="col-1-3">
+                    <div class="cardDisplay"></div>
+                </div>
+                <div class="col-1-3">
+                    <div class="cardDisplay"></div>
+                </div>
+                <div class="col-1-3">
+                    <div class="cardDisplay"></div>
+                </div>
+            </div>
+            <div class="row-2-100"></div>
+        </div>
+        <div class="activePanel" id="p2Active">
+            <div class="row-9-100"></div>
+            <div class="row-40-100">
+                <div class="col-1-5">
+                    <div class="cardDisplay"></div>
+                </div>
+                <div class="col-1-5">
+                    <div class="cardDisplay"></div>
+                </div>
+                <div class="col-1-5">
+                    <div class="cardDisplay"></div>
+                </div>
+                <div class="col-1-5">
+                    <div class="cardDisplay"></div>
+                </div>
+                <div class="col-1-5">
+                    <div class="cardDisplay"></div>
+                </div>
+            </div>
+            <div class="row-9-100"></div>
+            <div class="row-40-100">
+                <div class="col-2-5"></div>
+                <div class="col-1-5">
+                    <div class="cardDisplay">
+                        <img src="images/Machop-Base-Set-52.jpg">
+                    </div>
+                </div>
+                <div class="col-2-5"></div>
+            </div>
+            <div class="row-2-100"></div>
+        </div>
+        <div class="discardAndDeckPanel" id="p2Deck">
+            <div class="row-9-100"></div>
+            <div class="row-40-100">
+                <div class="cardDisplay"></div>
+            </div>
+            <div class="row-9-100"></div>
+            <div class="row-40-100">
+                <div class="cardDisplay"></div>
+            </div>
+            <div class="row-2-100"></div>
+        </div>
+        <div class="handPanel" id="p2Hand">
+        </div>
 
-    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.4.4.js"></script>
-    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.js"></script>
-       
-    <div id="pageContent">
-      <h1>Pokemon data should display here</h1>
-      <div id="activeContainer"></div>
+    </div>
+    
+    
+    <div class="playerPanel">
+        <div class="prizePanel"  id="p1Prize">
+            <div class="row-2-100"></div>
+            <div class="row-40-100">
+                <div class="col-1-3">
+                    <div class="cardDisplay"></div>
+                </div>
+                <div class="col-1-3">
+                    <div class="cardDisplay"></div>
+                </div>
+                <div class="col-1-3">
+                    <div class="cardDisplay"></div>
+                </div>
+            </div>
+            <div class="row-9-100"></div>
+            <div class="row-40-100">
+                <div class="col-1-3">
+                    <div class="cardDisplay"></div>
+                </div>
+                <div class="col-1-3">
+                    <div class="cardDisplay"></div>
+                </div>
+                <div class="col-1-3">
+                    <div class="cardDisplay"></div>
+                </div>
+            </div>
+            <div class="row-9-100"></div>
+        </div>
+        <div class="activePanel" id="p1Active">
+            <div class="row-2-100"></div>
+            <div class="row-40-100">
+                <div class="col-2-5"></div>
+                <div class="col-1-5">
+                    <div class="cardDisplay"></div>
+                </div>
+                <div class="col-2-5"></div>
+            </div>
+            <div class="row-9-100"></div>
+            <div class="row-40-100">
+                <div class="col-1-5">
+                    <div class="cardDisplay"></div>
+                </div>
+                <div class="col-1-5">
+                    <div class="cardDisplay"></div>
+                </div>
+                <div class="col-1-5">
+                    <div class="cardDisplay"></div>
+                </div>
+                <div class="col-1-5">
+                    <div class="cardDisplay"></div>
+                </div>
+                <div class="col-1-5">
+                    <div class="cardDisplay"></div>
+                </div>
+            </div>
+            <div class="row-9-100"></div>
+        </div>
+        <div class="discardAndDeckPanel" id="p1Deck">
+            <div class="row-2-100"></div>
+            <div class="row-40-100">
+                <div class="cardDisplay"></div>
+            </div>
+            <div class="row-9-100"></div>
+            <div class="row-40-100">
+                <div class="cardDisplay"></div>
+            </div>
+            <div class="row-9-100"></div>
+        </div>
+        <div class="handPanel" id="p1Hand">
+        </div>
+        
     </div>
 
-    <script id="activeTemplate" type="text/x-jQuery-tmpl">
-      <div>
-        <h2>${title}</h2>
-      </div>
-    </script>
-
-    <script> 
-      $.getJSON("http://localhost:8080/PokeServlet/simpleJson", function(data) {
-    	//  $("#activeTemplate").tmpl(data).appendTo("#activeContainer")
-    	alert(data)
-      });
-      
-      /*$.ajax({
-          url : "http://localhost:8080/PokeServlet/simpleJson",
-          dataType : 'json',
-          error : function(_,_,err) {
-            alert(err)
-          },
-          success : function(data) {
-            alert(data)
-          }
-        });*/
-    </script>
-
-	</BODY>
-</HTML>
+</div>
+</body>
+</html>

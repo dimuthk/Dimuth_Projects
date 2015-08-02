@@ -10,6 +10,10 @@
   	<servlet-name>simpleJson</servlet-name>
   	<servlet-class>servlets.SimpleJson</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>getImage</servlet-name>
+  	<servlet-class>servlets.Image</servlet-class>
+  </servlet>
   <servlet-mapping>
     <servlet-name>helloWorld</servlet-name>
     <url-pattern>/sayHello</url-pattern>
@@ -17,6 +21,10 @@
   <servlet-mapping>
   	<servlet-name>simpleJson</servlet-name>
   	<url-pattern>/simpleJson</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>getImage</servlet-name>
+  	<url-pattern>/getImage</url-pattern>
   </servlet-mapping>
 </web-app>
 
