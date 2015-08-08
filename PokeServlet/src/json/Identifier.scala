@@ -3,7 +3,7 @@ package json
 /**
  * Standard values for json value mappings; these are meant to be the keys for json pairings.
  * All JSON object value names should be directly taken from this list.
- * next id: 14
+ * next id: 17
  */
 object Identifier extends Enumeration {
   
@@ -19,6 +19,8 @@ object Identifier extends Enumeration {
   val IDENTIFIER = Value(1)
   val DISPLAY_NAME = Value(2)
   val PLACEHOLDER = Value(7)
+  val IMG_NAME = Value(14)
+  val BOARD = Value(16)
   
   /*
    * PLAYER ATTRIBUTES
@@ -41,7 +43,7 @@ object Identifier extends Enumeration {
    * POKEMON
    */
   val MACHOP = Value(6)
-
+  val RATTATA = Value(15)
 
 }
 

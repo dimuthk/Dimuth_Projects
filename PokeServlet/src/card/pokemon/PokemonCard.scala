@@ -6,7 +6,8 @@ import json.Identifier
 
 abstract class PokemonCard(
     displayName : String,
-    val maxHp : Int) extends Card(displayName) {
+    imgName : String,
+    val maxHp : Int) extends Card(displayName, imgName) {
 
   var currHp : Int = maxHp
   
@@ -21,6 +22,7 @@ abstract class PokemonCard(
       .put(Identifier.DISPLAY_NAME, displayName)
       .put(Identifier.MAX_HP, maxHp)
       .put(Identifier.CURR_HP, currHp)
+      .put(Identifier.IMG_NAME, imgName)
 
   
   override def equals(o : Any) = o match {

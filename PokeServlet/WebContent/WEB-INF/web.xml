@@ -11,8 +11,8 @@
   	<servlet-class>servlets.SimpleJson</servlet-class>
   </servlet>
   <servlet>
-  	<servlet-name>getImage</servlet-name>
-  	<servlet-class>servlets.Image</servlet-class>
+  	<servlet-name>handToActive</servlet-name>
+  	<servlet-class>servlets.HandToActive</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>helloWorld</servlet-name>
@@ -23,8 +23,8 @@
   	<url-pattern>/simpleJson</url-pattern>
   </servlet-mapping>
   <servlet-mapping>
-  	<servlet-name>getImage</servlet-name>
-  	<url-pattern>/getImage</url-pattern>
+  	<servlet-name>handToActive</servlet-name>
+  	<url-pattern>/handToActive</url-pattern>
   </servlet-mapping>
 </web-app>
 

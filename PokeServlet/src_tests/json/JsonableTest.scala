@@ -51,4 +51,19 @@ class JsonableTest extends FunSuite {
     assert(playerRT.deck.isEmpty)
   }
   
+  test("Test player deck") {
+    val player = new Player()
+    player.deck = for(i <- 0 to 4) yield new Machop()
+    val playerRT : Player = new Player()
+    playerRT.setJsonValues(new JSONObject(player.toJson().toString()))
+    assert(playerRT.active.isEmpty)
+    for(i <- 0 to 4) {
+      assert(playerRT.deck(i).equals(new Machop()))
+    }
+    playerRT.prizes.foreach { x => assert(x == None) }
+    playerRT.bench.foreach { x => assert(x == None) }
+    assert(playerRT.garbage.isEmpty)
+    assert(playerRT.hand.isEmpty)
+  }
+  
 }

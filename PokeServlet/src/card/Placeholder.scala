@@ -8,7 +8,7 @@ import org.json.JSONObject
  * simply process no_cards as None, and add a placeholder to represent the None
  * in json.
  */
-class Placeholder extends Card("PlaceHolder") {
+class Placeholder extends Card("PlaceHolder", "NO_IMG") {
   
   override def toJsonImpl() = new JSONObject()
   

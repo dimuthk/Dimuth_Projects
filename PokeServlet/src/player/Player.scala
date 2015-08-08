@@ -24,7 +24,7 @@ class Player extends Jsonable {
   
   var active : Option[PokemonCard] = None
   
-  def addCardToJsonArr(curr : JSONArray, c : Card) = curr.put(c)
+  def addCardToJsonArr(curr : JSONArray, c : Card) = curr.put(c.toJson())
   def addOptionCardToJsonArr(curr : JSONArray, oc : Option[Card]) = curr.put(optionCardToJson(oc))
   
   private def optionCardToJson(oc : Option[Card]) : JSONObject = oc match {
