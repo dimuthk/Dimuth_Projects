@@ -29,7 +29,7 @@ class SimpleJson extends HttpServlet {
     p2.hand = List.fill(7)(new Machop())
     
     val j = new JSONObject()
-    j.put("board", new JSONArray().put(p.toJson()).put(p2.toJson()))
+    j.put("BOARD", new JSONArray().put(p.toJson()).put(p2.toJson()))
 
     writer.print(j.toString())
     writer.close()
